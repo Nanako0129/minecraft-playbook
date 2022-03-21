@@ -1,0 +1,88 @@
+
+plugins: 
+### Lib/API
+
+  - type: spigot
+    name: PlaceholderAPI
+    spigot_id: 6245
+  - type: spigot
+    name: ProtocolLib
+    spigot_id: 1997
+  - type: spigot
+    name: Vault
+    spigot_id: 34315
+
+### Mod support
+
+  - type: spigot
+    name: ChangeSlots
+    spigot_id: 49648
+  - type: spigot
+    name: CoreProtect
+    spigot_id: 8631
+  - type: spigot
+    name: DiscordSRV
+    spigot_id: 18494
+  - type: spigot
+    name: EntityDetection
+    spigot_id: 20588
+  - type: spigot
+    name: InventoryRollbackPlus
+    spigot_id: 85811
+  - type: spigot
+    name: LuckPerms
+    spigot_id: 28140
+  - type: spigot
+    name: PluginManager
+    spigot_id: 69061
+  - type: spigot
+    name: spark
+    spigot_id: 57242
+  - type: spigot
+    name: ViaVersion
+    spigot_id: 19254
+  - type: spigot
+    name: ViaBackward
+    spigot_id: 27448
+  - type: link
+    name: WorldEdit
+    link: https://ci.enginehub.org/repository/download/bt10/17722:id/worldedit-bukkit-7.3.0-SNAPSHOT-dist.jar?branch=master&guest=1
+
+### Game feature
+  - type: spigot
+    name: AdvancedPortals
+    spigot_id: 21155
+  - type: spigot
+    name: ChestCommands(Fork)
+    spigot_id: 84790
+# - EssentialsX
+#     - EssentialsX
+#     - EssentialsXAntiBuild
+#     - EssentialsXChat
+#     - (EssentialsXDiscord)
+#     - EssentialsXGeoIP
+#     - EssentialsXProtect
+#     - EssentialsXSpawn 
+
+  - type: spigot
+    name: GSit
+    spigot_id: 62325
+  - type: spigot
+    name: LocketteX
+    spigot_id: 73184
+# - HuskSync
+  - type: spigot
+    name: RHLeafDecay
+    spigot_id: 83581
+  - type: link
+    name: TAB
+    link: "https://github.com/NEZNAMY/TAB/releases/download/3.0.2/TAB.v3.0.2.jar"
+
+### Extented plugins
+# - AsyncWorldEdit
+  - type: spigot
+    name: CoreProtectTNT
+    spigot_id: 69609
+  - type: spigot
+    name: WorldEditSUI
+    spigot_id: 60726
