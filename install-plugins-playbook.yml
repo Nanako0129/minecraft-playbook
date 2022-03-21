@@ -7,8 +7,8 @@
 
   tasks:
     ## import plugins list vars from /vars/games/{{ game }}/plugins.yml and register them in the variable plugins
-    - name: Load plugins list vars from /vars/games/{{ game }}/plugins.yml and register them in the variable plugins
-      include_vars: "vars/games/{{ game }}/plugins.yml"
+    - name: Load plugins list vars from plugins.yml and regist them
+      include_vars: "vars/{{ game_type }}/plugins.yml"
 
     - name: Install plugins from Spigot
       include_role:
