@@ -1,0 +1,12 @@
+plugins: 
+### Lib/API
+
+  - type: spigot
+    name: PlaceholderAPI
+    spigot_id: 6245
+  - type: spigot
+    name: ProtocolLib
+    spigot_id: 1997
+  - type: spigot
+    name: Vault
+    spigot_id: 34315
