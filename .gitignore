@@ -2,3 +2,4 @@ container/
 .test.*
 .test/
 pd_settings.yml
+.DS_Store
