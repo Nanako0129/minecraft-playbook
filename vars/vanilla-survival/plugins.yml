@@ -1,5 +1,4 @@
-
-plugins: 
+plugins:
 ### Lib/API
 
   - type: spigot
@@ -20,9 +19,9 @@ plugins:
   - type: spigot
     name: CoreProtect
     spigot_id: 8631
-  - type: spigot
+  - type: link
     name: DiscordSRV
-    spigot_id: 18494
+    link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.25.1/DiscordSRV-Build-1.25.1.jar
   - type: spigot
     name: EntityDetection
     spigot_id: 20588
@@ -38,23 +37,35 @@ plugins:
   - type: spigot
     name: spark
     spigot_id: 57242
-  - type: spigot
-    name: ViaVersion
-    spigot_id: 19254
-  - type: spigot
-    name: ViaBackward
-    spigot_id: 27448
+  # - type: spigot
+  #   name: ViaVersion
+  #   spigot_id: 19254
+  # - type: spigot
+  #   name: ViaBackward
+  #   spigot_id: 27448
   - type: link
     name: WorldEdit
-    link: https://ci.enginehub.org/repository/download/bt10/17722:id/worldedit-bukkit-7.3.0-SNAPSHOT-dist.jar?branch=master&guest=1
+    link: 'https://dev.bukkit.org/projects/worldedit/files/latest'
 
 ### Game feature
   - type: spigot
     name: AdvancedPortals
-    spigot_id: 21155
+    spigot_id: 14356
   - type: spigot
     name: ChestCommands(Fork)
     spigot_id: 84790
+  - type: spigot
+    name: LocketteX
+    spigot_id: 73184
+  - type: link
+    name: EssentialsX
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
+  - type: link
+    name: EssentialsXChat
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
+  - type: link
+    name: EssentialsXSpawn
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar
 # - EssentialsX
 #     - EssentialsX
 #     - EssentialsXAntiBuild
@@ -62,7 +73,7 @@ plugins:
 #     - (EssentialsXDiscord)
 #     - EssentialsXGeoIP
 #     - EssentialsXProtect
-#     - EssentialsXSpawn 
+#     - EssentialsXSpawn
 
   - type: spigot
     name: GSit
@@ -76,7 +87,7 @@ plugins:
     spigot_id: 83581
   - type: link
     name: TAB
-    link: "https://github.com/NEZNAMY/TAB/releases/download/3.0.2/TAB.v3.0.2.jar"
+    link: "https://github.com/NEZNAMY/TAB/releases/download/3.1.1/TAB.v3.1.1.jar"
 
 ### Extented plugins
 # - AsyncWorldEdit
