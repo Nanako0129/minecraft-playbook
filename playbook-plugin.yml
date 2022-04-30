@@ -11,7 +11,7 @@
         dir: "vars/{{ game_type }}"
     - name: Lookup node settings
       ansible.builtin.include_tasks: "roles/common/tasks/get-node-from-remoteID.yml"
-
+      when: do_symlink is defined and do_symlink is true
   tasks:
     - name: Update plugins
       ansible.builtin.include_role:
