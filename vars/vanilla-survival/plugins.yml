@@ -48,9 +48,9 @@ plugins:
     link: 'https://dev.bukkit.org/projects/worldedit/files/latest'
 
 ### Game feature
-  - type: spigot
+  - type: link
     name: AdvancedPortals
-    spigot_id: 14356
+    link: https://github.com/sekwah41/Advanced-Portals/releases/download/v0.9.2/Advanced-Portals-0.9.2.jar
   - type: spigot
     name: LocketteX
     spigot_id: 73184
