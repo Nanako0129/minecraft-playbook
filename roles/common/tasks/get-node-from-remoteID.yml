@@ -1,0 +1,34 @@
+- name: Look up node configuration
+  block:
+    - name: 'Get the details of {{ server_external_id }}'
+      ansible.builtin.uri:
+        url: "https://{{ pd_host }}/api/application/servers/external/{{ server_external_id }}"
+        method: get
+        validate_certs: 'no'
+        headers:
+          Authorization: 'Bearer {{ pd_app_token }}'
+      register: server_external_id_response
+      failed_when: server_external_id is not defined
+    - name: Get the node details
+      ansible.builtin.uri:
+        url: "https://{{ pd_host }}/api/application/nodes/{{ server_external_id_response.json.attributes.node }}/configuration"
+        method: get
+        validate_certs: 'no'
+        headers:
+          Authorization: Bearer {{ pd_app_token }}
+      register: node_config
+  rescue:
+    - name: 'server external is not set'
+      ansible.builtin.fail:
+        msg: 'server external is not set, please set server_external_id as an external argument'
+- name: Set volume_path
+  ansible.builtin.set_fact:
+    volume_path: "{{ node_config.json.system.data }}"
+- name: Set server_uuid
+  ansible.builtin.set_fact:
+    server_uuid: "{{ server_external_id_response.json.attributes.uuid }}"
+- name: print volume_path and server_uuid
+  ansible.builtin.debug:
+    msg: |
+      volume_path: {{ volume_path }}
+      server_uuid: {{ server_uuid }}
