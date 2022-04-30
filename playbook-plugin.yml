@@ -11,7 +11,7 @@
         dir: "vars/{{ game_type }}"
     - name: Lookup volume path
       ansible.builtin.include_tasks: "roles/common/tasks/get-volume-path-by-remoteID.yml"
-      when: do_symlink is defined and do_symlink is true
+      when: do_symlink is defined and do_symlink
   tasks:
     - name: Update plugins
       ansible.builtin.include_role:
