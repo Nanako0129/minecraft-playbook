@@ -1,0 +1,17 @@
+- name: 'Step install {{ plugin.name }}'
+  block:
+    - name: 'Download plugin {{ plugin.name }} from direct link'
+      ansible.builtin.get_url:
+        mode: '0644'
+        url: "{{ plugin.link }}"
+        dest: "{{ mnt_dir }}/{{ plugin.name | replace(' ', '') }}.jar"
+        http_agent: "{{ http_agent }}"
+        force: 'yes'
+      register: plugin_download
+  rescue:
+    - name: log failed task
+      ansible.builtin.set_fact:
+        the_failed_task:
+          - plugin: '{{ plugin }}'
+            reason: 'Fail to download plugin from link'
+            logs: '{{ plugin_download }}'

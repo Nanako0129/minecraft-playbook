@@ -1,0 +1,17 @@
+- name: 'Step install {{ plugin.name }}'
+  block:
+    - name: 'Download plugin {{ plugin.name }} from Spiget'
+      ansible.builtin.get_url:
+        mode: '0644'
+        url: https://api.spiget.org/v2/resources/{{ plugin.spigot_id }}/download
+        dest: "{{ mnt_dir }}/{{ plugin.name | replace(' ', '') }}.jar"
+        http_agent: "{{ http_agent }}"
+        force: 'yes'
+      register: plugin_download
+  rescue:
+    - name: log failed task
+      ansible.builtin.set_fact:
+        the_failed_task:
+          - plugin: '{{ plugin }}'
+            reason: 'Fail to download plugin from Spigot'
+            logs: '{{ plugin_download }}'

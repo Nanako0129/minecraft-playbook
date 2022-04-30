@@ -1,0 +1,23 @@
+- name: Pre tasks
+  ansible.builtin.set_fact:
+    the_failed_task: "nothing"
+- name: print vars
+  ansible.builtin.debug:
+    msg: "{{ plugin }}"
+- name: Step install
+  block:
+    - name: "Install from {{ plugin.type }}"
+      ansible.builtin.include_tasks: 'type-{{ plugin.type }}.yml'
+      when: plugin.type is defined
+  rescue:
+    - name: "{{ plugin.type }} not supported"
+      ansible.builtin.set_fact:
+        the_failed_task:
+          - plugin: '{{ plugin }}'
+            reason: 'Ignore because of unknown plugin type'
+- name: Collect logs
+  block:
+    - name: collect failed tasks
+      ansible.builtin.set_fact:
+        failed_tasks: "{{ failed_tasks }} + {{ the_failed_task }}"
+      when: the_failed_task != "nothing"
