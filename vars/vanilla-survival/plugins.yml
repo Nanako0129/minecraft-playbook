@@ -52,9 +52,6 @@ plugins:
     name: AdvancedPortals
     spigot_id: 14356
   - type: spigot
-    name: ChestCommands(Fork)
-    spigot_id: 84790
-  - type: spigot
     name: LocketteX
     spigot_id: 73184
   - type: link
