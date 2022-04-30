@@ -1,0 +1,40 @@
+- name: Pre tasks
+  ansible.builtin.set_fact:
+    the_failed_task: "nothing"
+- name: Step check
+  block:
+    - name: Check server volume does exist
+      ansible.builtin.stat:
+        path: '{{ volume_path }}/{{ server_uuid }}'
+      register: server_volume_stat
+      failed_when: server_volume_stat.stat.exists == False
+  rescue:
+    - name: force stop
+      ansible.builtin.fail:
+        msg: "Server volume does not exist, please check {{ volume_path }}/{{ server_uuid }}"
+
+- name: Step create
+  block:
+    - name: check plugin is installed
+      ansible.builtin.stat:
+        path: '{{ mnt_dir }}/{{ plugin.name }}.jar'
+      register: plugin_stat
+      failed_when: plugin_stat.stat.exists == False
+    - name: Create symbolic link file
+      ansible.builtin.file:
+        path: '{{ volume_path }}/{{ server_uuid }}/plugins/{{ plugin.name }}.jar'
+        state: link
+        src: '{{ mnt_dir }}/{{ plugin.name }}.jar'
+      register: create_link_file
+  rescue:
+    - name: logs failed
+      ansible.builtin.set_fact:
+        the_failed_task:
+          - plugin: "{{ plugin }}"
+            reason: "Fail to link {{ plugin.name }} is not installed"
+- name: Collect logs
+  block:
+    - name: collect failed tasks
+      ansible.builtin.set_fact:
+        failed_tasks: "{{ failed_tasks }} + {{ the_failed_task }}"
+      when: the_failed_task != "nothing"
