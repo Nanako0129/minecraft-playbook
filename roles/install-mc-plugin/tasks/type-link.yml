@@ -2,7 +2,7 @@
   block:
     - name: 'Download plugin {{ plugin.name }} from direct link'
       ansible.builtin.get_url:
-        mode: '0644'
+        mode: '0777'
         url: "{{ plugin.link }}"
         dest: "{{ mnt_dir }}/{{ plugin.name | replace(' ', '') }}.jar"
         http_agent: "{{ http_agent }}"

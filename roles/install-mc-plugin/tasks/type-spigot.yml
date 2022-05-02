@@ -2,7 +2,7 @@
   block:
     - name: 'Download plugin {{ plugin.name }} from Spiget'
       ansible.builtin.get_url:
-        mode: '0644'
+        mode: '0777'
         url: https://api.spiget.org/v2/resources/{{ plugin.spigot_id }}/download
         dest: "{{ mnt_dir }}/{{ plugin.name | replace(' ', '') }}.jar"
         http_agent: "{{ http_agent }}"
