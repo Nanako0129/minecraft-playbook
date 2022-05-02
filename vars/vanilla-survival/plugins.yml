@@ -75,9 +75,12 @@ plugins:
   - type: spigot
     name: GSit
     spigot_id: 62325
-  - type: spigot
-    name: LocketteX
-    spigot_id: 73184
+  # - type: spigot
+  #   name: LocketteX
+  #   spigot_id: 73184
+  - type: link
+    name: LockettePro
+    link: https://ci.nyaacat.com/job/LockettePro/job/1.18/lastSuccessfulBuild/artifact/build/libs/LockettePro-mc1.18.1-2.12.2.jar
 # - HuskSync
   - type: spigot
     name: RHLeafDecay
