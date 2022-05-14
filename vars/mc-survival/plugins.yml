@@ -97,8 +97,5 @@ plugins:
 ### Extented plugins
 # - AsyncWorldEdit
   - type: spigot
-    name: CoreProtectTNT
-    spigot_id: 69609
-  - type: spigot
     name: WorldEditSUI
     spigot_id: 60726
