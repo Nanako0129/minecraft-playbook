@@ -69,6 +69,14 @@ plugins:
 #     - EssentialsXProtect
 #     - EssentialsXSpawn
 
+# - HuskHomes
+  - type: link
+    name: HuskHomes
+    link: https://github.com/WiIIiam278/HuskHomes2/releases/download/2.11.2/HuskHomes-2.11.2.jar
+  - type: link
+    name: HuskHomesGUI
+    link: https://github.com/WiIIiam278/HomeGUI/releases/download/1.2.2/HuskHomesGUI-1.2.2.jar
+
   - type: spigot
     name: GSit
     spigot_id: 62325
