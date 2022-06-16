@@ -73,23 +73,22 @@ plugins:
   - type: link
     name: HuskHomes
     link: https://github.com/WiIIiam278/HuskHomes2/releases/download/2.11.2/HuskHomes-2.11.2.jar
-  - type: link
-    name: HuskHomesGUI
-    link: https://github.com/WiIIiam278/HomeGUI/releases/download/1.2.2/HuskHomesGUI-1.2.2.jar
+  # - type: link
+  #   name: HuskHomesGUI
+  #   link: https://github.com/WiIIiam278/HomeGUI/releases/download/1.2.2/HuskHomesGUI-1.2.2.jar
 
-  - type: link
-    name: GravityControl
-    link: https://github.com/sulu5890/GravityControl/releases/download/v1.3.0/GravityControl-1.3.0.jar
   - type: spigot
     name: GSit
     spigot_id: 62325
-  # - type: spigot
-  #   name: LocketteX
-  #   spigot_id: 73184
+
+  # Protection
   - type: link
     name: LockettePro
     link: https://ci.nyaacat.com/job/LockettePro/job/1.18/lastSuccessfulBuild/artifact/build/libs/LockettePro-mc1.18.1-2.12.2.jar
-# - HuskSync
+  - type: spigot
+    name: LWXC
+    spigot_id: 69551
+
   - type: spigot
     name: RHLeafDecay
     spigot_id: 83581
