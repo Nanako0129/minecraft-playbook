@@ -106,6 +106,3 @@ plugins:
   - type: link
     name: NoCheatPlus
     link: https://ci.codemc.io/job/Updated-NoCheatPlus/job/Updated-NoCheatPlus/lastSuccessfulBuild/artifact/target/NoCheatPlus.jar
-  - type: spigot
-    name: ClientDetector
-    spigot_id: 90375
