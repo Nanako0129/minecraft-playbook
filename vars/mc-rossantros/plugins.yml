@@ -1,0 +1,64 @@
+plugins:
+### Lib/API
+  - type: spigot
+    name: PlaceholderAPI
+    spigot_id: 6245
+  - type: spigot
+    name: ProtocolLib
+    spigot_id: 1997
+  - type: spigot
+    name: BKCommonLib
+    spigot_id: 39590
+
+### Management
+  - type: spigot
+    name: CoreProtect
+    spigot_id: 8631
+  - type: spigot
+    name: LuckPerms
+    spigot_id: 28140
+  - type: spigot
+    name: spark
+    spigot_id: 57242
+  - type: spigot
+    name: MyWorlds
+    spigot_id: 39594
+  - type: spigot
+    name: MessageAnnouncer
+    spigot_id: 5408
+  - type: spigot
+    name: CyberWorldReset-Standard
+    spigot_id: 96834
+
+### Integration
+  - type: spigot
+    name: DiscordSRV
+    spigot_id: 18494
+
+### Game feature
+  - type: spigot
+    name: AdvancedTeleport
+    spigot_id: 64139
+  - type: spigot
+    name: CommandPanels
+    spigot_id: 67788
+  - type: spigot
+    name: RHLeafDecay
+    spigot_id: 83581
+  - type: spigot
+    name: SinglePlayerSleep
+    spigot_id: 68139
+  - type: spigot
+    name: PlayerKits
+    spigot_id: 75185
+  - type: spigot
+    name: 3DItems
+    spigot_id: 88479
+
+  # Protection
+  - type: spigot
+    name: LocketteX
+    spigot_id: 73184
+  - type: link
+    name: DeadChest
+    link: https://dev.bukkit.org/projects/dead-chest/files/latest
