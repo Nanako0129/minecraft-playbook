@@ -4,7 +4,7 @@ Ansible Playbook to deploy minecraft server with plugins.
 ## Environment vars
 Create `pd_settings.yml` under `var/game_type` folder and add these vars into it:
 - `pd_host`: the domain name of your pterodactyl panel
-- `pd_token`: the **ADMIN** API token of your pterodactyl panel
+- `pd_app_token`: the **ADMIN** API token of your pterodactyl panel
 
 ## Update plugins only
 - `mnt_dir` is the directory where the plugins will be or has been installed.
