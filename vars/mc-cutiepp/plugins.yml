@@ -46,6 +46,9 @@ plugins:
   - type: link
     name: EssentialsXSpawn
     link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXSpawn-2.19.7.jar
+  - type: link
+    name: EssentialsXProtect
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXProtect-2.19.7.jar
   - type: spigot
     name: GSit
     spigot_id: 62325
