@@ -51,16 +51,9 @@ plugins:
     spigot_id: 62325
 
   # Protection
-  - type: link
-    name: LockettePro
-    link: https://ci.nyaacat.com/job/LockettePro/job/1.18/lastSuccessfulBuild/artifact/build/libs/LockettePro-mc1.18.1-2.12.3.jar
-  # - type: spigot
-  #   name: LWXC
-  #   spigot_id: 69551
-  - type: link
-    name: DeadChest
-    link: https://dev.bukkit.org/projects/dead-chest/files/4104890/download
-
+  - type: spigot
+    name: LocketteX
+    spigot_id: 73184
 
   - type: spigot
     name: RHLeafDecay
@@ -68,8 +61,3 @@ plugins:
   - type: link
     name: TAB
     link: "https://github.com/NEZNAMY/TAB/releases/download/3.1.1/TAB.v3.1.1.jar"
-
-### Extented plugins
-  - type: spigot
-    name: WorldEditSUI
-    spigot_id: 60726
