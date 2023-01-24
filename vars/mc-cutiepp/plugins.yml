@@ -14,9 +14,9 @@ plugins:
   - type: spigot
     name: ChangeSlots
     spigot_id: 49648
-  - type: spigot
-    name: CoreProtect
-    spigot_id: 8631
+  # - type: spigot
+  #   name: CoreProtect
+  #   spigot_id: 8631
   - type: link
     name: DiscordSRV
     link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.0/DiscordSRV-Build-1.26.0.jar
