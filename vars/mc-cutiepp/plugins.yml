@@ -1,0 +1,75 @@
+plugins:
+### Lib/API
+  - type: spigot
+    name: PlaceholderAPI
+    spigot_id: 6245
+  - type: spigot
+    name: ProtocolLib
+    spigot_id: 1997
+  - type: spigot
+    name: Vault
+    spigot_id: 34315
+
+### Mod support
+  - type: spigot
+    name: ChangeSlots
+    spigot_id: 49648
+  - type: spigot
+    name: CoreProtect
+    spigot_id: 8631
+  - type: link
+    name: DiscordSRV
+    link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.0/DiscordSRV-Build-1.26.0.jar
+  - type: spigot
+    name: EntityDetection
+    spigot_id: 20588
+  - type: spigot
+    name: InventoryRollbackPlus
+    spigot_id: 85811
+  - type: spigot
+    name: LuckPerms
+    spigot_id: 28140
+  - type: spigot
+    name: PluginManager
+    spigot_id: 69061
+  - type: spigot
+    name: spark
+    spigot_id: 57242
+
+### Game feature
+  - type: link
+    name: EssentialsX
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar
+  - type: link
+    name: EssentialsXChat
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXChat-2.19.7.jar
+  - type: link
+    name: EssentialsXSpawn
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXSpawn-2.19.7.jar
+  - type: spigot
+    name: GSit
+    spigot_id: 62325
+
+  # Protection
+  - type: link
+    name: LockettePro
+    link: https://ci.nyaacat.com/job/LockettePro/job/1.18/lastSuccessfulBuild/artifact/build/libs/LockettePro-mc1.18.1-2.12.3.jar
+  # - type: spigot
+  #   name: LWXC
+  #   spigot_id: 69551
+  - type: link
+    name: DeadChest
+    link: https://dev.bukkit.org/projects/dead-chest/files/latest
+
+
+  - type: spigot
+    name: RHLeafDecay
+    spigot_id: 83581
+  - type: link
+    name: TAB
+    link: "https://github.com/NEZNAMY/TAB/releases/download/3.1.1/TAB.v3.1.1.jar"
+
+### Extented plugins
+  - type: spigot
+    name: WorldEditSUI
+    spigot_id: 60726
