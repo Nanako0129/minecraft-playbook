@@ -21,6 +21,12 @@ plugins:
     name: DiscordSRV
     link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.0/DiscordSRV-Build-1.26.0.jar
   - type: spigot
+    name: InteractiveChat
+    spigot_id: 75870
+  - type: spigot
+    name: InteractiveChatDiscordSRVAddon
+    spigot_id: 83917
+  - type: spigot
     name: EntityDetection
     spigot_id: 20588
   - type: spigot
