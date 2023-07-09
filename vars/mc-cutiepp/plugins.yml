@@ -14,12 +14,12 @@ plugins:
   - type: spigot
     name: ChangeSlots
     spigot_id: 49648
-  # - type: spigot
-  #   name: CoreProtect
-  #   spigot_id: 8631
+  - type: spigot
+    name: CoreProtect
+    spigot_id: 8631
   - type: link
     name: DiscordSRV
-    link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.0/DiscordSRV-Build-1.26.0.jar
+    link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.2/DiscordSRV-Build-1.26.2.jar
   - type: spigot
     name: InteractiveChat
     spigot_id: 75870
@@ -45,16 +45,16 @@ plugins:
 ### Game feature
   - type: link
     name: EssentialsX
-    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.20.0/EssentialsX-2.20.0.jar
   - type: link
     name: EssentialsXChat
-    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXChat-2.19.7.jar
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.20.0/EssentialsXChat-2.20.0.jar
   - type: link
     name: EssentialsXSpawn
-    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXSpawn-2.19.7.jar
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.20.0/EssentialsXSpawn-2.20.0.jar
   - type: link
     name: EssentialsXProtect
-    link: https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXProtect-2.19.7.jar
+    link: https://github.com/EssentialsX/Essentials/releases/download/2.20.0/EssentialsXProtect-2.20.0.jar
   - type: spigot
     name: GSit
     spigot_id: 62325
@@ -69,4 +69,4 @@ plugins:
     spigot_id: 83581
   - type: link
     name: TAB
-    link: "https://github.com/NEZNAMY/TAB/releases/download/3.2.3/TAB.v3.2.3.jar"
+    link: "https://github.com/NEZNAMY/TAB/releases/download/4.0.3/TAB.v4.0.3.jar"
