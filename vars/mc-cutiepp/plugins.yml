@@ -14,18 +14,18 @@ plugins:
   - type: spigot
     name: ChangeSlots
     spigot_id: 49648
-  - type: spigot
+  - type: link
     name: CoreProtect
-    spigot_id: 8631
+    link: https://cdn.modrinth.com/data/Lu3KuzdV/versions/mvLpRWww/CoreProtect-21.3.jar
   - type: link
     name: DiscordSRV
     link: https://github.com/DiscordSRV/DiscordSRV/releases/download/v1.26.2/DiscordSRV-Build-1.26.2.jar
-  - type: spigot
+  - type: link
     name: InteractiveChat
-    spigot_id: 75870
-  - type: spigot
+    link: https://ci.loohpjames.com/job/InteractiveChat/lastSuccessfulBuild/artifact/target/InteractiveChat-4.2.7.2.jar
+  - type: link
     name: InteractiveChatDiscordSRVAddon
-    spigot_id: 83917
+    link: https://ci.loohpjames.com/job/InteractiveChat-DiscordSRV-Addon/lastSuccessfulBuild/artifact/target/InteractiveChatDiscordSrvAddon-4.2.7.2.jar
   - type: spigot
     name: EntityDetection
     spigot_id: 20588
